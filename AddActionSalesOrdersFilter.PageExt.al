@@ -1,27 +1,3 @@
-tableextension 50105 AddLocationFieldTable extends "Sales & Receivables Setup"
-{
-    fields
-    {
-        field(67; LocationCode; Text[20])
-        {
-            Caption = 'Location Code';
-        }
-    }
-}
-pageextension 50106 AddLocationFieldCard extends "Sales & Receivables Setup"
-{
-    layout
-    {
-        addlast(General)
-        {
-            field("Location Code"; Rec.LocationCode)
-            {
-                ApplicationArea = all;
-                Caption = 'Location Code';
-            }
-        }
-    }
-}
 pageextension 50107 AddActionSalesOrdersFilter extends "Sales Order List"
 {
     actions
